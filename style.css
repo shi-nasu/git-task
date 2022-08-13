@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #6c6b6b;
+}
+
+body {
+    height: 1040px;
+    width: 100%;
+}
+
+header {
+    height: 50px;
+    background: rgba(247, 144, 0, 0.925);
+    margin-bottom: 50px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 500px;
+    background: #e7e6e6;
+    margin-bottom: 20px;
+}
+
+.card:last-child {
+    margin-bottom: 50px;
+}
+
+.step {
+    position: absolute;
+    background-color: rgba(247, 144, 0, 0.925);
+    color: #fff;
+    font-size: 13px;
+    padding: 0 2px 2px 2px;
+}
+
+.card-image {
+    margin: 5px 5px 0 5px;
+    width: 490px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+.card-title {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.card-text {
+    padding: 0 10px 5px 10px;
+    font-size: 14px;
+}
+
+footer {
+    height: 50px;
+    background: rgb(164, 164, 164)；
+}
+
+/* すべての画面サイズで適用される設定 */
+.social i {
+    color:black;
+  }
+  /* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
+  @media screen and (max-width:1024px) {
+    .social i {
+      color: green;
+    }
+  }
+  /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+  @media screen and (max-width:768px) {
+    .social i {
+      color: red;
+    }
+  }
+  /* スマートフォンサイズ（425px）以下の際に適用される設定 */
+  @media screen and (max-width:425px) {
+    .social i {
+      color: blue;
+    }
+  }
