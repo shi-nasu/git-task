@@ -18,7 +18,8 @@ header {
 
 .card {
     margin: 0 auto;
-    width: 500px;
+    padding: 10px;
+    width: 90%;
     background: #e7e6e6;
     margin-bottom: 20px;
 }
@@ -36,49 +37,43 @@ header {
 }
 
 .card-image {
-    margin: 5px 5px 0 5px;
-    width: 490px;
-    height: 160px;
+    height: 150px;
+    width: 100%;
     object-fit: cover;
     object-position: 100% 100%;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .card-title {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-left: 10px;
     font-size: 18px;
 }
 
 .card-text {
-    padding: 0 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
     font-size: 14px;
 }
 
 footer {
     height: 50px;
-    background: rgb(164, 164, 164)；
+    background-color: gray;
 }
 
-/* すべての画面サイズで適用される設定 */
-.social i {
-    color:black;
-  }
-  /* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
-  @media screen and (max-width:1024px) {
-    .social i {
-      color: green;
+  @media screen and (min-width:769px) {
+    main {
+      display: flex;
+      width: 960px;
+      margin: 0 auto
+    }
+    .card {
+      margin-bottom: 50px;
+      margin-right: 30px;
+      width: 300px;
+      padding: 10px;
     }
   }
-  /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-  @media screen and (max-width:768px) {
-    .social i {
-      color: red;
-    }
-  }
-  /* スマートフォンサイズ（425px）以下の際に適用される設定 */
-  @media screen and (max-width:425px) {
-    .social i {
-      color: blue;
-    }
-  }
+
+  
