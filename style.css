@@ -16,20 +16,25 @@ header {
     margin-bottom: 50px;
 }
 
-.card {
+main {
     margin: 0 auto;
-    padding: 10px;
-    width: 90%;
-    background: #e7e6e6;
-    margin-bottom: 20px;
+    width: 960px;
+    display: flex;
 }
 
-.card:last-child {
-    margin-bottom: 50px;
+.card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background: #e7e6e6;
+    margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .step {
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgba(247, 144, 0, 0.925);
     color: #fff;
     font-size: 13px;
@@ -38,7 +43,7 @@ header {
 
 .card-image {
     height: 150px;
-    width: 100%;
+    width: 280px;
     object-fit: cover;
     object-position: 100% 100%;
     background-size: cover;
@@ -62,17 +67,25 @@ footer {
     background-color: gray;
 }
 
-  @media screen and (min-width:769px) {
+  @media screen and (max-width:768px) {
     main {
-      display: flex;
-      width: 960px;
-      margin: 0 auto
+        display: block;
+        width: 90%;
+        margin: 0 auto;
     }
     .card {
-      margin-bottom: 50px;
-      margin-right: 30px;
-      width: 300px;
-      padding: 10px;
+        margin-bottom: 50px;
+        margin-right: 30px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .card:last-child {
+    margin-bottom: 50px;
+}
+
+    .card-image {
+        width: 100%;
     }
   }
 
